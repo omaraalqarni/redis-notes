@@ -4,14 +4,14 @@
 
 a furniture store has a huge DB and it is slow
 
-**LIST of Items**
-**| Id  | type | color | Material |**
+```
+LIST of Items
+| Id  | type | color | Material |
 | 1   | couch | red   | leather |
 | 2   | table | brown | wood  |
 | 3   | chair | green | plastic |
-
 and thousands more.
-
+```
 **My job** : make it faster using Redis
 
 -------------
@@ -53,20 +53,22 @@ materials:
 2. w -> wood
 3. p -> plastic
 
+```
 Before:
-**LIST of Items**
-**| Id  | type | color | Material |**
+LIST of Items
+| Id  | type | color | Material |
 | 1   | couch | red   | leather |
 | 2   | table | brown | wood  |
 | 3   | chair | green | plastic |
-
-**After:** Encoded table
-**LIST of Items**
-**| Id  | type | color | Material |**
+```
+```
+After: Encoded table
+LIST of Items
+| Id  | type | color | Material |
 | 1   | c   | r   | l   |
 | 2   | t   | b   | w   |
 | 3   | f   | g   | p   |
-
+```
 
 ## Step 3, Store them to Redis
 
