@@ -74,11 +74,12 @@ LIST of Items
 
 using the encoded table above:
 in Redis: 
+```
 item:1 --> crl
 item:2 --> tbw
 item:3 --> fgp
 etc..
-
+```
 -----
 # So now, back to the users' interaction with DB
 1. Fetch one to three properties of an item
